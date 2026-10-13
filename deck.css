@@ -2288,3 +2288,22 @@ body.controls-visible .deck-controls,
 .dns-node rect { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 2; }
 .dns-node text { fill: #0f172a; font-size: 19px; font-weight: 800; }
 .dns-node.good rect { fill: #d1fae5; stroke: #34d399; }
+
+/* ponytail: static QR for slide 12, regenerate images/qr-slide-12.svg if the URL changes */
+.howto-qr {
+  position: absolute;
+  left: 32px;
+  bottom: 24px;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  color: #475569;
+}
+
+.howto-qr img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.15);
+}
