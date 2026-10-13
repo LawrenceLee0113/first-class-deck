@@ -913,8 +913,8 @@ h1, h2, h3, p {
 }
 
 .quiz-logo {
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
   object-fit: contain;
 }
 
@@ -2063,62 +2063,6 @@ body.controls-visible .deck-controls,
   font-weight: 700;
 }
 
-.sec-code {
-  margin: 0 0 8px;
-  border-radius: 12px;
-  padding: 18px 22px;
-  background: #0f172a;
-  color: #e6edf7;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 19px;
-  line-height: 1.6;
-}
-
-.sec-code .c { color: #64748b; }
-
-/* Pwn 記憶體格子 */
-.mem-row { display: flex; gap: 8px; }
-
-.mem {
-  display: grid;
-  place-items: center;
-  width: 84px;
-  height: 84px;
-  border: 3px solid #0d9488;
-  border-radius: 10px;
-  background: #ccfbf1;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.mem-next {
-  position: relative;
-  border: 3px dashed #94a3b8;
-  background: #f8fafc;
-}
-
-.mem-next small {
-  position: absolute;
-  bottom: -30px;
-  color: #64748b;
-  font-family: "Noto Sans TC", sans-serif;
-  font-size: 15px;
-  white-space: nowrap;
-}
-
-.mem-next b { color: #dc2626; }
-.mem-next:has(b.shown) { border-color: #dc2626; background: #fee2e2; animation: vcs-shake 500ms ease 200ms; }
-
-.mem-label {
-  width: 360px;
-  margin: 8px 0 18px;
-  color: #0d9488;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 18px;
-  text-align: center;
-}
-
 /* Crypto */
 .crypto-row + .crypto-row {
   margin-top: 24px;
@@ -2134,43 +2078,6 @@ body.controls-visible .deck-controls,
 }
 
 .crypto-row .sec-flow { margin-bottom: 4px; }
-
-/* DFIR 時間線 */
-.slide-sec .dfir-line {
-  margin: 0 0 16px;
-  padding: 0 0 0 28px;
-  border-left: 4px solid #cbd5e1;
-  list-style: none;
-}
-
-.slide-sec .dfir-line li {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  margin-bottom: 22px;
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.dfir-line li::before {
-  content: "";
-  position: absolute;
-  left: -40px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #dc2626;
-}
-
-.dfir-line time {
-  border-radius: 8px;
-  padding: 4px 12px;
-  background: #0f172a;
-  color: #5eead4;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 20px;
-}
 
 .crypto-eg {
   margin-top: 10px;
@@ -2292,18 +2199,470 @@ body.controls-visible .deck-controls,
 /* ponytail: static QR for slide 12, regenerate images/qr-slide-12.svg if the URL changes */
 .howto-qr {
   position: absolute;
-  left: 32px;
-  bottom: 24px;
+  left: 104px;
+  bottom: 32px;
   margin: 0;
-  text-align: center;
-  font-size: 14px;
-  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
 }
 
 .howto-qr img {
   display: block;
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(15, 23, 42, 0.15);
+}
+
+/* ---------- slide-21 ~ 23 學習資源：左 SVG 技能樹（由上往下、由淺入深）、右關鍵字 ---------- */
+.tree-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 480px;
+  gap: 40px;
+  min-height: 0;
+}
+
+.tree-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.tree-svg .dedges line {
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.tree-svg .dnode circle {
+  fill: #ffffff;
+  stroke-width: 4;
+  filter: drop-shadow(0 6px 12px rgba(15, 23, 42, 0.1));
+}
+
+.tree-svg .dl {
+  fill: #0f172a;
+  font-size: 17px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+.tree-svg .dtag {
+  fill: #0d9488;
+  font-size: 14px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+.tree-svg .dead circle { fill: #f1f5f9; stroke-dasharray: 6 5; filter: none; }
+.tree-svg .dead image { filter: grayscale(1); opacity: 0.4; }
+.tree-svg .dead .dl { fill: #94a3b8; text-decoration: line-through; }
+.tree-svg .dead .dtag { fill: #dc2626; }
+.tree-svg .dead .slash { stroke: #dc2626; stroke-width: 4; stroke-linecap: round; }
+
+/* 學習順序徽章：先打勾，最後一步換成數字 */
+.tree-svg .badge circle { fill: #0d9488; stroke: #ffffff; stroke-width: 3; }
+.tree-svg .badge .check { fill: none; stroke: #ffffff; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.tree-svg .badge .num { fill: #ffffff; font-size: 15px; font-weight: 900; text-anchor: middle; }
+.tree-svg .badge .num.shown ~ .check { display: none; }
+
+/* 重點框架：最後一步放大加光圈，其他節點與連線變淡 */
+.tree-svg .dnode,
+.tree-svg .dedges { transition: transform 400ms ease, opacity 400ms ease; }
+.tree-svg .hl-ring { fill: none; stroke-width: 4; filter: drop-shadow(0 0 8px currentColor); }
+.tree-svg .dnode:has(.hl-ring.shown) { transform: scale(1.25); }
+.tree-svg:has(.hl-ring.shown) .dnode:not(:has(.hl-ring.shown)),
+.tree-svg:has(.hl-ring.shown) .dedges { opacity: 0.25; }
+
+/* 以階段為單位的頁面：每層一條淡色橫帶，層與層之間一個箭頭 */
+.tree-svg .band { fill: rgba(13, 148, 136, 0.06); stroke: rgba(13, 148, 136, 0.25); stroke-width: 1.5; }
+.tree-svg .band-arrow { stroke: #0d9488; stroke-width: 4; stroke-linecap: round; }
+.tree-svg .band-head { fill: #0d9488; }
+
+/* 大叉：蓋在整張圖上 */
+.tree-svg .big-x rect { fill: rgba(247, 249, 252, 0.55); }
+.tree-svg .big-x path { fill: none; stroke: #dc2626; stroke-width: 36; stroke-linecap: round; filter: drop-shadow(0 8px 16px rgba(220, 38, 38, 0.35)); }
+
+.tree-svg .emoji {
+  font-size: 32px;
+  text-anchor: middle;
+}
+
+.tree-svg .lv {
+  fill: #0d9488;
+  font-family: "JetBrains Mono", "Noto Sans TC", monospace;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.tree-keys {
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-top: 6px solid #0d9488;
+  border-radius: 20px;
+  padding: 24px 28px;
+  background: #ffffff;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+  align-self: center;
+}
+
+.keys-title {
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.tree-keys dl { margin: 0; }
+.tree-keys dl div + div { margin-top: 12px; padding-top: 12px; border-top: 1px dashed #e2e8f0; }
+
+.tree-keys dt {
+  color: #0d9488;
+  font-family: "JetBrains Mono", "Noto Sans TC", monospace;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tree-keys dd {
+  margin: 2px 0 0;
+  color: #334155;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* 結語卡片：最後一步浮在技能樹上，技能樹變淡 */
+.slide-tree .tree-svg { transition: opacity 400ms ease; }
+.slide-tree:has(.tree-finale.shown) .tree-svg { opacity: 0.15; }
+
+.tree-finale {
+  position: absolute;
+  left: 104px;
+  width: 872px;
+  top: 300px;
+  display: grid;
+  justify-items: center;
+  gap: 32px;
+  border-top: 8px solid #0d9488;
+  border-radius: 24px;
+  padding: 40px 48px 44px;
+  background: #ffffff;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.18);
+  pointer-events: none;
+}
+
+.tree-finale p {
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.finale-logos {
+  display: grid;
+  grid-template-columns: repeat(3, 210px);
+}
+
+.finale-logos figure {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.finale-logos span {
+  display: grid;
+  place-items: center;
+  width: 96px;
+  height: 96px;
+  border: 5px solid;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+}
+
+.finale-logos img { width: 54px; height: 54px; }
+
+.finale-logos figcaption {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* ---------- 動手玩 Git：安裝 Git 與 VS Code ---------- */
+.slide-setup { grid-template-rows: auto minmax(0, 1fr) auto; }
+
+.setup-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  align-content: center;
+}
+
+.setup-card {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  column-gap: 28px;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 20px;
+  padding: 32px 36px;
+  background: #ffffff;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+  align-content: start;
+}
+
+.setup-card > :not(.setup-logo) { grid-column: 2; }
+
+.setup-logo {
+  grid-row: 1 / span 4;
+  display: grid;
+  place-items: center;
+  width: 112px;
+  height: 112px;
+  border: 5px solid;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+}
+
+.setup-logo img { width: 62px; height: 62px; }
+
+.setup-card h3 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.setup-card h3 small {
+  margin-left: 12px;
+  color: #64748b;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.setup-url {
+  justify-self: start;
+  margin: 12px 0 20px;
+  border-radius: 10px;
+  padding: 8px 16px;
+  background: #ccfbf1;
+  color: #134e4a;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.setup-card ul {
+  margin: 0;
+  padding-left: 1.2em;
+  color: #334155;
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.setup-card b { color: #0d9488; }
+
+.setup-check {
+  border-left: 6px solid #0d9488;
+  border-radius: 12px;
+  padding: 18px 24px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.setup-card code,
+.setup-check code {
+  border-radius: 6px;
+  padding: 2px 8px;
+  background: #0f172a;
+  color: #5eead4;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9em;
+}
+
+/* ---------- 段落大標題頁：深色底、大編號 ---------- */
+.slide-part {
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  column-gap: 72px;
+}
+
+.part-no {
+  color: transparent;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 360px;
+  font-weight: 700;
+  line-height: 1;
+  -webkit-text-stroke: 4px #5eead4;
+}
+
+.part-copy h2 {
+  font-size: 104px;
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.part-sub {
+  margin-top: 28px;
+  color: #a5b4cf;
+  font-size: 36px;
+}
+
+.part-nav {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 24px 0 0;
+  border-top: 1px solid rgba(165, 180, 207, 0.25);
+  list-style: none;
+  color: #64748b;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.part-nav li {
+  border-radius: 999px;
+  padding: 8px 20px;
+}
+
+.part-nav b {
+  margin-right: 10px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.part-nav .on {
+  background: rgba(94, 234, 212, 0.15);
+  color: #5eead4;
+}
+
+/* slide-11 最後一步：卡片變淡，浮出「別人真的會點進去看」的聊天截圖 */
+.why-grid { transition: opacity 400ms ease; }
+.slide-why:has(.why-proof.active) .why-grid { opacity: 0.12; }
+
+.slide-why .stage.why-proof {
+  position: absolute;
+  inset: 200px 104px 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+  margin: 0;
+  pointer-events: none;
+}
+
+.why-proof img {
+  height: 100%;
+  border-radius: 24px;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.3);
+}
+
+.why-proof figcaption {
+  max-width: 560px;
+  border-top: 8px solid #0d9488;
+  border-radius: 20px;
+  padding: 32px 36px;
+  background: #ffffff;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.15);
+}
+
+.proof-tag {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 4px 14px;
+  background: #fee2e2;
+  color: #991b1b;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.why-proof h3 {
+  margin: 14px 0 16px;
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.why-proof figcaption p:not(.proof-tag) {
+  color: #334155;
+  font-size: 24px;
+  line-height: 1.7;
+}
+
+.why-proof code {
+  border-radius: 6px;
+  padding: 0 6px;
+  background: #f1f5f9;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 20px;
+}
+
+.why-proof .proof-tip {
+  margin-top: 16px;
+  border-radius: 12px;
+  padding: 12px 16px;
+  background: #ccfbf1;
+  color: #134e4a !important;
+  font-weight: 700;
+}
+
+/* ---------- 最後兩頁：Q&A 大標題（深色）＋「你可以問我」內頁（淺色三張卡） ---------- */
+.slide-qa {
+  place-content: center;
+  justify-items: center;
+  gap: 24px;
+}
+
+.qa-mark {
+  color: transparent;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 300px;
+  font-weight: 700;
+  line-height: 1;
+  -webkit-text-stroke: 5px #5eead4;
+}
+
+.qa-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-self: center;
+  align-items: start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.qa-list li {
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-top: 6px solid #0d9488;
+  border-radius: 20px;
+  padding: 36px 36px 40px;
+  background: #ffffff;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+.qa-list b {
+  display: block;
+  color: #0d9488;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 28px;
+}
+
+.qa-icon {
+  display: block;
+  margin: 16px 0 12px;
+  font-size: 72px;
+}
+
+.qa-list h3 {
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.qa-list p {
+  margin-top: 14px;
+  color: #334155;
+  font-size: 26px;
+  line-height: 1.6;
 }
