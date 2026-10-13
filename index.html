@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./deck.css" />
   </head>
   <body>
+    <!-- 線條圖示庫：Lucide v0.460.0（ISC License），各處用 <svg class="ic"><use href="#i-名稱"/></svg> 引用 -->
+    <svg class="icon-sprite" aria-hidden="true"><symbol id="i-keyboard" viewBox="0 0 24 24"><path d="M10 8h.01"/><path d="M12 12h.01"/><path d="M14 8h.01"/><path d="M16 12h.01"/><path d="M18 8h.01"/><path d="M6 8h.01"/><path d="M7 16h10"/><path d="M8 12h.01"/><rect width="20" height="16" x="2" y="4" rx="2"/></symbol><symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol><symbol id="i-bomb" viewBox="0 0 24 24"><circle cx="11" cy="13" r="9"/><path d="M14.35 4.65 16.3 2.7a2.41 2.41 0 0 1 3.4 0l1.6 1.6a2.4 2.4 0 0 1 0 3.4l-1.95 1.95"/><path d="m22 2-1.5 1.5"/></symbol><symbol id="i-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></symbol><symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></symbol><symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol><symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></symbol><symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-file-text" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol><symbol id="i-fingerprint" viewBox="0 0 24 24"><path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4"/><path d="M14 13.12c0 2.38 0 6.38-1 8.88"/><path d="M17.29 21.02c.12-.6.43-2.3.5-3.02"/><path d="M2 12a10 10 0 0 1 18-6"/><path d="M2 16h.01"/><path d="M21.8 16c.2-2 .131-5.354 0-6"/><path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2"/><path d="M8.65 22c.21-.66.45-1.32.57-2"/><path d="M9 6.8a6 6 0 0 1 9 5.2v2"/></symbol><symbol id="i-folder-open" viewBox="0 0 24 24"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2"/></symbol><symbol id="i-folder" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></symbol><symbol id="i-gamepad-2" viewBox="0 0 24 24"><line x1="6" x2="10" y1="11" y2="11"/><line x1="8" x2="8" y1="9" y2="13"/><line x1="15" x2="15.01" y1="12" y2="12"/><line x1="18" x2="18.01" y1="10" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></symbol><symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol><symbol id="i-graduation-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol><symbol id="i-handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></symbol><symbol id="i-hard-drive" viewBox="0 0 24 24"><line x1="22" x2="2" y1="12" y2="12"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><line x1="6" x2="6.01" y1="16" y2="16"/><line x1="10" x2="10.01" y1="16" y2="16"/></symbol><symbol id="i-key-round" viewBox="0 0 24 24"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/><circle cx="16.5" cy="7.5" r=".5" fill="currentColor"/></symbol><symbol id="i-key" viewBox="0 0 24 24"><path d="m15.5 7.5 2.3 2.3a1 1 0 0 0 1.4 0l2.1-2.1a1 1 0 0 0 0-1.4L19 4"/><path d="m21 2-9.6 9.6"/><circle cx="7.5" cy="15.5" r="5.5"/></symbol><symbol id="i-lightbulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol><symbol id="i-lock-keyhole" viewBox="0 0 24 24"><circle cx="12" cy="16" r="1"/><rect x="3" y="10" width="18" height="12" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol><symbol id="i-message-circle" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol><symbol id="i-messages-square" viewBox="0 0 24 24"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></symbol><symbol id="i-network" viewBox="0 0 24 24"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></symbol><symbol id="i-octagon-x" viewBox="0 0 24 24"><path d="m15 9-6 6"/><path d="M2.586 16.726A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2h6.624a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586z"/><path d="m9 9 6 6"/></symbol><symbol id="i-palette" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></symbol><symbol id="i-party-popper" viewBox="0 0 24 24"><path d="M5.8 11.3 2 22l10.7-3.79"/><path d="M4 3h.01"/><path d="M22 8h.01"/><path d="M15 2h.01"/><path d="M22 20h.01"/><path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10"/><path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17"/><path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7"/><path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z"/></symbol><symbol id="i-pen-line" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></symbol><symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"/></symbol><symbol id="i-school" viewBox="0 0 24 24"><path d="M14 22v-4a2 2 0 1 0-4 0v4"/><path d="m18 10 3.447 1.724a1 1 0 0 1 .553.894V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7.382a1 1 0 0 1 .553-.894L6 10"/><path d="M18 5v17"/><path d="m4 6 7.106-3.553a2 2 0 0 1 1.788 0L20 6"/><path d="M6 5v17"/><circle cx="12" cy="9" r="2"/></symbol><symbol id="i-search-code" viewBox="0 0 24 24"><path d="m13 13.5 2-2.5-2-2.5"/><path d="m21 21-4.3-4.3"/><path d="M9 8.5 7 11l2 2.5"/><circle cx="11" cy="11" r="8"/></symbol><symbol id="i-server" viewBox="0 0 24 24"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></symbol><symbol id="i-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></symbol><symbol id="i-triangle-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol><symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol><symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol></svg>
     <main class="deck" data-deck-size="1600x900" aria-live="polite">
       <section class="slide slide-cover active" data-slide-id="slide-01" aria-hidden="false">
         <div class="cover-copy">
@@ -320,7 +322,7 @@
           <div class="stage project-row" data-ai-id="slide-04-stage-06" data-ai-role="group">
             <div class="learned" data-ai-id="slide-04-learned-06" data-ai-role="body">
               <p class="learned-label">// 專案中我學到的</p>
-              <p class="learned-text">畢業後沒事做，等當兵，等被 AI 淘汰 🫠</p>
+              <p class="learned-text">畢業後沒事做，等當兵，等被 AI 淘汰</p>
             </div>
             <div class="project-cards">
           <article class="project" data-ai-id="slide-04-project-10" data-ai-role="card">
@@ -408,17 +410,17 @@
         <div class="vcs-copy">
           <p class="eyebrow" data-ai-id="slide-06-eyebrow" data-ai-role="label">// Git 101 · 01</p>
           <h2 data-ai-id="slide-06-title" data-ai-role="title">為什麼需要<br><span class="accent">版本控制</span>？</h2>
-          <p class="vcs-lede" data-ai-id="slide-06-lede">你一定做過這種事 👉</p>
+          <p class="vcs-lede" data-ai-id="slide-06-lede">你一定做過這種事</p>
         </div>
         <div class="vcs-window" data-ai-id="slide-06-window" data-ai-role="group">
-          <div class="vcs-titlebar"><i></i><i></i><i></i><span>📁 期末專題</span></div>
+          <div class="vcs-titlebar"><i></i><i></i><i></i><span><svg class="ic" aria-hidden="true"><use href="#i-folder"/></svg> 期末專題</span></div>
           <ol class="vcs-files">
-            <li class="stage active"><span class="vcs-name">📄 期末報告.docx</span><time>10/01 14:20</time></li>
-            <li class="stage"><span class="vcs-name">📄 期末報告_v2.docx</span><time>10/03 21:05</time></li>
-            <li class="stage"><span class="vcs-name">📄 期末報告_final.docx</span><time>10/05 23:48</time></li>
-            <li class="stage"><span class="vcs-name">📄 期末報告_final_v2.docx</span><time>10/06 01:30</time></li>
-            <li class="stage"><span class="vcs-name">📄 期末報告_真的final.docx</span><time>10/07 03:12</time></li>
-            <li class="stage vcs-worst"><span class="vcs-name">📄 期末報告_真的final_改這版(1).docx</span><time>10/08 04:47</time></li>
+            <li class="stage active"><span class="vcs-name"><svg class="ic" aria-hidden="true"><use href="#i-file-text"/></svg> 期末報告.docx</span><time>10/01 14:20</time></li>
+            <li class="stage"><span class="vcs-name"><svg class="ic" aria-hidden="true"><use href="#i-file-text"/></svg> 期末報告_v2.docx</span><time>10/03 21:05</time></li>
+            <li class="stage"><span class="vcs-name"><svg class="ic" aria-hidden="true"><use href="#i-file-text"/></svg> 期末報告_final.docx</span><time>10/05 23:48</time></li>
+            <li class="stage"><span class="vcs-name"><svg class="ic" aria-hidden="true"><use href="#i-file-text"/></svg> 期末報告_final_v2.docx</span><time>10/06 01:30</time></li>
+            <li class="stage"><span class="vcs-name"><svg class="ic" aria-hidden="true"><use href="#i-file-text"/></svg> 期末報告_真的final.docx</span><time>10/07 03:12</time></li>
+            <li class="stage vcs-worst"><span class="vcs-name"><svg class="ic" aria-hidden="true"><use href="#i-file-text"/></svg> 期末報告_真的final_改這版(1).docx</span><time>10/08 04:47</time></li>
           </ol>
         </div>
         <div class="stage vcs-punch" data-ai-id="slide-06-punch" data-ai-role="card">
@@ -431,7 +433,7 @@
         </div>
         <figure class="stage vcs-demo" data-ai-id="slide-06-demo" data-ai-role="image">
           <video src="./videos/docs-history.mp4" muted loop playsinline preload="auto"></video>
-          <figcaption>💡 其實你用過：Google 文件的「<b>版本記錄</b>」就是一種版本控制</figcaption>
+          <figcaption><svg class="ic" aria-hidden="true"><use href="#i-lightbulb"/></svg> 其實你用過：Google 文件的「<b>版本記錄</b>」就是一種版本控制</figcaption>
         </figure>
       </section>
 
@@ -442,7 +444,7 @@
         </header>
         <div class="vs-grid">
           <article class="stage active vs-card" data-ai-id="slide-07-git" data-ai-role="card">
-            <div class="vs-icon">💾</div>
+            <div class="vs-icon"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-hard-drive"/></svg></span></div>
             <p class="vs-kicker">Git</p>
             <h3>本機的存檔工具</h3>
             <ul>
@@ -454,7 +456,7 @@
           </article>
           <div class="vs-sign" aria-hidden="true">≠</div>
           <article class="stage vs-card vs-cloud" data-ai-id="slide-07-github" data-ai-role="card">
-            <div class="vs-icon">☁️</div>
+            <div class="vs-icon"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-cloud"/></svg></span></div>
             <p class="vs-kicker">GitHub</p>
             <h3>放 Repo 的雲端網站</h3>
             <ul>
@@ -465,7 +467,7 @@
             <code>github.com/你的帳號</code>
           </article>
         </div>
-        <p class="stage vs-analogy" data-ai-id="slide-07-analogy" data-ai-role="body">🎮 就像打遊戲：<b>Git</b> 是存檔功能，<b>GitHub</b> 是雲端存檔，換台主機也能接著玩</p>
+        <p class="stage vs-analogy" data-ai-id="slide-07-analogy" data-ai-role="body"><svg class="ic" aria-hidden="true"><use href="#i-gamepad-2"/></svg> 就像打遊戲：<b>Git</b> 是存檔功能，<b>GitHub</b> 是雲端存檔，換台主機也能接著玩</p>
       </section>
 
       <section class="slide slide-light slide-build slide-terms" data-slide-id="slide-08" data-step="0" aria-hidden="true">
@@ -479,7 +481,7 @@
           </defs>
           <g data-from="3">
             <rect class="g-cloud" x="230" y="10" width="320" height="80" rx="16" />
-            <text class="g-title" x="390" y="60" text-anchor="middle">☁️ GitHub（遠端）</text>
+            <text class="g-title" x="390" y="60" text-anchor="middle">GitHub（遠端）</text>
           </g>
           <g data-from="3">
             <line class="g-arrow" x1="330" y1="152" x2="330" y2="100" marker-end="url(#arrowHead)" />
@@ -489,7 +491,7 @@
           </g>
           <g data-from="0">
             <rect class="g-repo" x="20" y="160" width="740" height="420" rx="20" />
-            <text class="g-title" x="48" y="206">📁 my-website（本機 Repo）</text>
+            <text class="g-title" x="48" y="206">my-website（本機 Repo）</text>
           </g>
           <path class="g-line" data-from="1" pathLength="1" d="M100 480 H420" />
           <path class="g-line" data-from="2" pathLength="1" d="M420 480 H660" />
@@ -511,22 +513,22 @@
           <article class="stage active term" data-ai-id="slide-08-repo" data-ai-role="card">
             <h3>Repository <small>儲存庫</small></h3>
             <p>一個被 Git 管理的專案資料夾</p>
-            <p class="term-game">🎮 一個存檔欄位</p>
+            <p class="term-game"><svg class="ic" aria-hidden="true"><use href="#i-gamepad-2"/></svg> 一個存檔欄位</p>
           </article>
           <article class="stage term" data-ai-id="slide-08-commit" data-ai-role="card">
             <h3>Commit <small>提交</small></h3>
             <p>幫目前的檔案拍一張快照，附上一句說明</p>
-            <p class="term-game">🎮 存檔點，隨時可以讀檔回去</p>
+            <p class="term-game"><svg class="ic" aria-hidden="true"><use href="#i-gamepad-2"/></svg> 存檔點，隨時可以讀檔回去</p>
           </article>
           <article class="stage term" data-ai-id="slide-08-branch" data-ai-role="card">
             <h3>Branch <small>分支</small></h3>
             <p>開一條平行世界試新功能，成功再 merge 回 main</p>
-            <p class="term-game">🎮 開支線劇情，不怕玩壞主線</p>
+            <p class="term-game"><svg class="ic" aria-hidden="true"><use href="#i-gamepad-2"/></svg> 開支線劇情，不怕玩壞主線</p>
           </article>
           <article class="stage term" data-ai-id="slide-08-push" data-ai-role="card">
             <h3>Push / Pull <small>推送 / 拉取</small></h3>
             <p>push 把本機 commit 傳上 GitHub；pull 把別人的更新抓下來</p>
-            <p class="term-game">🎮 上傳 / 下載雲端存檔</p>
+            <p class="term-game"><svg class="ic" aria-hidden="true"><use href="#i-gamepad-2"/></svg> 上傳 / 下載雲端存檔</p>
           </article>
         </div>
       </section>
@@ -544,7 +546,7 @@
           <div class="flow-zone" data-from="2"><p class="zone-en">Local Repo</p><h3>本機儲存庫</h3><p>存檔點都在這裡</p></div>
           <div class="flow-arrow" data-from="3"><code>git push</code><span>→</span></div>
           <div class="flow-zone flow-remote" data-from="3"><p class="zone-en">Remote</p><h3>GitHub</h3><p>雲端備份，大家都看得到</p></div>
-          <div class="flow-token">📄 index.html<span class="flow-hash" data-from="2">a1b2c3d</span></div>
+          <div class="flow-token"><svg class="ic" aria-hidden="true"><use href="#i-file-text"/></svg> index.html<span class="flow-hash" data-from="2">a1b2c3d</span></div>
         </div>
         <div class="terminal flow-term" data-ai-id="slide-09-terminal" data-ai-role="group">
           <div class="terminal-bar" aria-hidden="true"><i></i><i></i><i></i><span>~/my-website</span></div>
@@ -565,26 +567,26 @@
         <div class="level-grid">
           <article class="stage active level" data-ai-id="slide-10-lv1" data-ai-role="card">
             <p class="level-no">Lv.1</p>
-            <h3>⌨️ 自己打指令</h3>
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-keyboard"/></svg> 自己打指令</h3>
             <div class="level-shot"><img src="./images/git/lv1-terminal.png" alt="在終端機打 git status、git add、git commit" /></div>
             <p>最慢，但你最清楚每一步在做什麼</p>
-            <span class="level-badge">⭐ 從這裡開始</span>
+            <span class="level-badge"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg> 從這裡開始</span>
           </article>
           <article class="stage level" data-ai-id="slide-10-lv2" data-ai-role="card">
             <p class="level-no">Lv.2</p>
-            <h3>🧩 VS Code 套件</h3>
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-puzzle"/></svg> VS Code 套件</h3>
             <div class="level-shot"><img src="./images/git/lv2-vscode.png" alt="VS Code Source Control 面板與 Git Graph" /></div>
             <p>內建 Source Control 面板，點按鈕就能 commit / push，Graph 看歷史很直覺</p>
           </article>
           <article class="stage level" data-ai-id="slide-10-lv3" data-ai-role="card">
             <p class="level-no">Lv.3</p>
-            <h3>💬 跟 AI 講</h3>
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-message-circle"/></svg> 跟 AI 講</h3>
             <div class="level-shot"><img src="./images/git/lv3-ai.png" alt="在 Claude Code 請 AI commit 並 push 到 dev 分支" /></div>
             <p>用講的就好，Gemini CLI、Claude Code 這類工具幫你下 git 指令</p>
           </article>
           <article class="stage level" data-ai-id="slide-10-lv4" data-ai-role="card">
             <p class="level-no">Lv.4</p>
-            <h3>🔑 給 AI gh 權限</h3>
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-key-round"/></svg> 給 AI gh 權限</h3>
             <div class="level-shot"><div class="gh-mock" role="img" aria-label="AI 用 gh 指令開 PR、關 issue">
               <p><span class="p">$</span> gh auth login</p>
               <p class="ok">✓ Logged in to github.com as LawrenceLee0113</p>
@@ -596,7 +598,7 @@
               <p class="o">  ⎿ ✓ Closed issue #8</p>
             </div></div>
             <p>AI 能幫你開 Repo、發 PR、回 Issue，連 GitHub 都一起操作</p>
-            <span class="level-badge warn">⚠️ 權限很大</span>
+            <span class="level-badge warn"><svg class="ic" aria-hidden="true"><use href="#i-triangle-alert"/></svg> 權限很大</span>
           </article>
         </div>
         <div class="level-preview" aria-hidden="true"><div class="level-preview-frame"></div></div>
@@ -613,23 +615,23 @@
         </header>
         <div class="why-grid">
           <article class="stage active why-card" data-ai-id="slide-11-team" data-ai-role="card">
-            <div class="why-icon">🤝</div>
+            <div class="why-icon"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-handshake"/></svg></span></div>
             <h3>團隊合作</h3>
             <p>專題不用再互傳 <code>final_v3.zip</code>，大家改同一個 Repo，誰改了什麼一清二楚。</p>
           </article>
           <article class="stage why-card" data-ai-id="slide-11-pages" data-ai-role="card">
-            <div class="why-icon">🌐</div>
+            <div class="why-icon"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg></span></div>
             <h3>免費架網站</h3>
             <p>GitHub Pages 讓你的網頁有一個真的網址，丟給朋友就能看。</p>
-            <span class="why-next">等一下就做 👉</span>
+            <span class="why-next">等一下就做 <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
           </article>
           <article class="stage why-card" data-ai-id="slide-11-student" data-ai-role="card">
-            <div class="why-icon">🎓</div>
+            <div class="why-icon"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-graduation-cap"/></svg></span></div>
             <h3>學生福利</h3>
             <p>用學校信箱申請 GitHub Education，Copilot 等開發工具免費用。</p>
           </article>
           <article class="stage why-card" data-ai-id="slide-11-portfolio" data-ai-role="card">
-            <div class="why-icon">📂</div>
+            <div class="why-icon"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-folder-open"/></svg></span></div>
             <h3>你的作品集</h3>
             <p>履歷放一個 GitHub 連結，面試官會點進去看你寫過什麼。綠色格子越多越有說服力。</p>
           </article>
@@ -637,9 +639,9 @@
         <figure class="stage why-proof" data-ai-id="slide-11-proof" data-ai-role="image">
           <img src="./images/github/portfolio-chat.jpg" alt="朋友在 GitHub 上翻到只有一行 console.log 的 test.js 並截圖傳來" />
           <figcaption>
-            <p class="proof-tag">真實案例 👀</p>
+            <p class="proof-tag"><svg class="ic" aria-hidden="true"><use href="#i-eye"/></svg> 真實案例</p>
             <h3>別人<span class="accent">真的會</span>點進去看</h3>
-            <p class="proof-tip">💡 GitHub 是公開的：放上去的東西，就是你的作品集</p>
+            <p class="proof-tip"><svg class="ic" aria-hidden="true"><use href="#i-lightbulb"/></svg> GitHub 是公開的：放上去的東西，就是你的作品集</p>
           </figcaption>
         </figure>
       </section>
@@ -763,10 +765,10 @@
           <article class="stage step" data-node="5" data-ai-id="slide-12-step-12" data-ai-role="group">
             <div class="step-copy">
               <p class="step-no">STEP 12<span>/ 12</span></p>
-              <h2>上線！🎉</h2>
+              <h2>上線！<svg class="ic" aria-hidden="true"><use href="#i-party-popper"/></svg></h2>
               <p class="step-desc">打開網址，你的網頁已經在網路上，傳給任何人都看得到。</p>
             </div>
-            <figure class="step-shot" data-ai-id="slide-12-shot-12" data-ai-role="image"><img src="./images/github/g12.jpg" alt="STEP 12 上線！🎉" loading="lazy" /></figure>
+            <figure class="step-shot" data-ai-id="slide-12-shot-12" data-ai-role="image"><img src="./images/github/g12.jpg" alt="STEP 12 上線！" loading="lazy" /></figure>
           </article>
         </div>
         <figure class="howto-qr" data-ai-id="slide-12-qr" data-ai-role="image"><img src="./images/qr-slide-12.svg" alt="掃描開啟本頁教學" /><figcaption>獲取線上簡報</figcaption></figure>
@@ -775,8 +777,8 @@
       <section class="slide slide-light slide-sec slide-setup" data-slide-id="slide-git-setup" aria-hidden="true">
         <header class="git-header">
           <p class="eyebrow" data-ai-id="slide-git-setup-eyebrow" data-ai-role="label">// Hands-on · Git</p>
-          <h2 data-ai-id="slide-git-setup-title" data-ai-role="title">接下來帶大家<span class="accent">玩一下 Git</span> 🎮</h2>
-          <p class="sec-lede" data-ai-id="slide-git-setup-lede">先把這兩個工具裝好 👇</p>
+          <h2 data-ai-id="slide-git-setup-title" data-ai-role="title">接下來帶大家<span class="accent">玩一下 Git</span></h2>
+          <p class="sec-lede" data-ai-id="slide-git-setup-lede">先把這兩個工具裝好</p>
         </header>
         <div class="setup-grid">
           <article class="setup-card" data-ai-id="slide-git-setup-git" data-ai-role="card">
@@ -798,7 +800,7 @@
             </ul>
           </article>
         </div>
-        <p class="setup-check" data-ai-id="slide-git-setup-check">✅ 裝好後打開終端機輸入 <code>git --version</code>，看到版本號就成功了</p>
+        <p class="setup-check" data-ai-id="slide-git-setup-check"><svg class="ic" aria-hidden="true"><use href="#i-circle-check"/></svg> 裝好後打開終端機輸入 <code>git --version</code>，看到版本號就成功了</p>
       </section>
 
       <section class="slide slide-part" data-slide-id="slide-part-03" aria-hidden="true">
@@ -815,26 +817,26 @@
         <header class="git-header">
           <p class="eyebrow" data-ai-id="slide-13-eyebrow" data-ai-role="label">// Security 101 · 01</p>
           <h2 data-ai-id="slide-13-title" data-ai-role="title">資安在<span class="accent">保護</span>什麼？</h2>
-          <p class="sec-lede" data-ai-id="slide-13-lede">用學校的「成績系統」來想 👇</p>
+          <p class="sec-lede" data-ai-id="slide-13-lede">用學校的「成績系統」來想</p>
         </header>
         <div class="cia-grid">
           <article class="stage active cia-card" data-ai-id="slide-13-c" data-ai-role="card">
             <p class="cia-letter">C</p>
             <h3>機密性 <small>Confidentiality</small></h3>
-            <p class="cia-keep">🔒 你的成績只有你和老師看得到</p>
-            <p class="cia-bad">😱 被破壞：同學偷看到全班成績</p>
+            <p class="cia-keep"><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg> 你的成績只有你和老師看得到</p>
+            <p class="cia-bad"><svg class="ic" aria-hidden="true"><use href="#i-triangle-alert"/></svg> 被破壞：同學偷看到全班成績</p>
           </article>
           <article class="stage cia-card" data-ai-id="slide-13-i" data-ai-role="card">
             <p class="cia-letter">I</p>
             <h3>完整性 <small>Integrity</small></h3>
-            <p class="cia-keep">✍️ 成績不會被偷偷改掉</p>
-            <p class="cia-bad">😱 被破壞：有人把 59 分改成 60 分</p>
+            <p class="cia-keep"><svg class="ic" aria-hidden="true"><use href="#i-pen-line"/></svg> 成績不會被偷偷改掉</p>
+            <p class="cia-bad"><svg class="ic" aria-hidden="true"><use href="#i-triangle-alert"/></svg> 被破壞：有人把 59 分改成 60 分</p>
           </article>
           <article class="stage cia-card" data-ai-id="slide-13-a" data-ai-role="card">
             <p class="cia-letter">A</p>
             <h3>可用性 <small>Availability</small></h3>
-            <p class="cia-keep">✅ 要查成績的時候系統打得開</p>
-            <p class="cia-bad">😱 被破壞：選課當天網站被灌爆掛掉</p>
+            <p class="cia-keep"><svg class="ic" aria-hidden="true"><use href="#i-circle-check"/></svg> 要查成績的時候系統打得開</p>
+            <p class="cia-bad"><svg class="ic" aria-hidden="true"><use href="#i-triangle-alert"/></svg> 被破壞：選課當天網站被灌爆掛掉</p>
           </article>
         </div>
       </section>
@@ -846,27 +848,27 @@
           <p class="sec-lede" data-ai-id="slide-14-lede">CTF 資安競賽也是照這幾類出題</p>
         </header>
         <div class="type-grid" data-ai-id="slide-14-grid" data-ai-role="group">
-          <article class="type-card"><span>🌐</span><h3>Web <small>網站安全</small></h3><p>請求、登入與資料權限</p></article>
-          <article class="type-card"><span>📡</span><h3>Network <small>網路安全</small></h3><p>封包、連線與信任</p></article>
-          <article class="type-card"><span>🔍</span><h3>Reverse <small>逆向工程</small></h3><p>從程式推回它的行為</p></article>
-          <article class="type-card"><span>💥</span><h3>Pwn <small>二進位漏洞利用</small></h3><p>輸入如何跨越記憶體邊界</p></article>
-          <article class="type-card"><span>🔐</span><h3>Crypto <small>密碼學</small></h3><p>加密、雜湊與驗證的保證</p></article>
-          <article class="type-card"><span>🕵️</span><h3>DFIR <small>數位鑑識與事件應變</small></h3><p>從證據重建發生過什麼</p></article>
+          <article class="type-card"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg></span><h3>Web <small>網站安全</small></h3><p>請求、登入與資料權限</p></article>
+          <article class="type-card"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-network"/></svg></span><h3>Network <small>網路安全</small></h3><p>封包、連線與信任</p></article>
+          <article class="type-card"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-search-code"/></svg></span><h3>Reverse <small>逆向工程</small></h3><p>從程式推回它的行為</p></article>
+          <article class="type-card"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-bomb"/></svg></span><h3>Pwn <small>二進位漏洞利用</small></h3><p>輸入如何跨越記憶體邊界</p></article>
+          <article class="type-card"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-lock-keyhole"/></svg></span><h3>Crypto <small>密碼學</small></h3><p>加密、雜湊與驗證的保證</p></article>
+          <article class="type-card"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-fingerprint"/></svg></span><h3>DFIR <small>數位鑑識與事件應變</small></h3><p>從證據重建發生過什麼</p></article>
         </div>
       </section>
 
       <section class="slide slide-light slide-build slide-sec slide-sec-one" data-slide-id="slide-15" data-step="0" aria-hidden="true">
         <header class="git-header sec-head">
           <p class="eyebrow" data-ai-id="slide-15-eyebrow" data-ai-role="label">// Security 101 · 03</p>
-          <h2 data-ai-id="slide-15-title" data-ai-role="title">🌐 Web <span class="accent">網站安全</span><small>請求、登入與資料權限</small></h2>
+          <h2 data-ai-id="slide-15-title" data-ai-role="title"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg></span>Web <span class="accent">網站安全</span><small>請求、登入與資料權限</small></h2>
         </header>
         <div class="sec-pair">
           <article class="stage active sec-panel" data-ai-id="slide-15-concept" data-ai-role="card">
             <h3>網址拿到了，也不能看<span class="accent">私人</span>影片</h3>
             <div class="sec-flow">
-              <span class="node">🙋 別人</span><i>→</i>
+              <span class="node"><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg> 別人</span><i>→</i>
               <span class="node mono">watch?v=私人影片</span><i>→</i>
-              <span class="node bad">🛑 這是私人影片</span>
+              <span class="node bad"><svg class="ic" aria-hidden="true"><use href="#i-octagon-x"/></svg> 這是私人影片</span>
             </div>
             <p class="sec-note">YouTube 影片可以設成<b>公開</b>、<b>不公開</b>、<b>私人</b>。</p>
             <p class="sec-note">就算知道網址，伺服器每一次都要檢查「<b>你有沒有權限看</b>」。</p>
@@ -880,7 +882,7 @@
               <li>這個入口<b>只看影片 ID、沒檢查權限</b>，研究員 David Schütz 用它把私人影片一格一格抓出來</li>
               <li>回報給 Google 後修好，拿到 <b>5,000 美元</b>漏洞獎金</li>
             </ol>
-            <p class="case-lesson">💡 每一個能拿到資料的入口，都要檢查權限</p>
+            <p class="case-lesson"><svg class="ic" aria-hidden="true"><use href="#i-lightbulb"/></svg> 每一個能拿到資料的入口，都要檢查權限</p>
           </article>
         </div>
       </section>
@@ -888,7 +890,7 @@
       <section class="slide slide-light slide-build slide-sec slide-sec-one" data-slide-id="slide-16" data-step="0" aria-hidden="true">
         <header class="git-header sec-head">
           <p class="eyebrow" data-ai-id="slide-16-eyebrow" data-ai-role="label">// Security 101 · 04</p>
-          <h2 data-ai-id="slide-16-title" data-ai-role="title">📡 Network <span class="accent">網路安全</span><small>封包、連線與信任</small></h2>
+          <h2 data-ai-id="slide-16-title" data-ai-role="title"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-network"/></svg></span>Network <span class="accent">網路安全</span><small>封包、連線與信任</small></h2>
         </header>
         <div class="sec-pair">
           <article class="stage active sec-panel" data-ai-id="slide-16-concept" data-ai-role="card">
@@ -900,13 +902,13 @@
               <path d="M150 205 L455 205" marker-end="url(#dnsArrow)"/>
               <text x="10" y="80">① myetherwallet.com</text><text x="34" y="102">在哪？</text>
               <text x="225" y="150">② 在 1.2.3.4</text>
-              <text x="300" y="235" text-anchor="middle">③ 連到 1.2.3.4（🔒 TLS）</text>
-              <g class="dns-node"><rect x="230" y="10" width="160" height="64" rx="12"/><text x="310" y="50" text-anchor="middle">📖 DNS 伺服器</text></g>
-              <g class="dns-node"><rect x="10" y="172" width="140" height="64" rx="12"/><text x="80" y="212" text-anchor="middle">💻 使用者</text></g>
-              <g class="dns-node good"><rect x="460" y="172" width="150" height="64" rx="12"/><text x="535" y="212" text-anchor="middle">🏦 網站伺服器</text></g>
+              <text x="300" y="235" text-anchor="middle">③ 連到 1.2.3.4（TLS 加密）</text>
+              <g class="dns-node"><rect x="230" y="10" width="160" height="64" rx="12"/><text x="310" y="50" text-anchor="middle">DNS 伺服器</text></g>
+              <g class="dns-node"><rect x="10" y="172" width="140" height="64" rx="12"/><text x="80" y="212" text-anchor="middle">使用者</text></g>
+              <g class="dns-node good"><rect x="460" y="172" width="150" height="64" rx="12"/><text x="535" y="212" text-anchor="middle">網站伺服器</text></g>
             </svg>
             <p class="sec-note"><b>DNS</b> 像電話簿：網址 → IP。被竄改就會被帶去假網站。</p>
-            <p class="sec-note"><b>TLS</b>：網址列的 🔒，憑證有效、內容有加密。</p>
+            <p class="sec-note"><b>TLS</b>：網址列的 <svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg>，憑證有效、內容有加密。</p>
             <p class="sec-motto">看到憑證警告，不要硬按「繼續前往」</p>
           </article>
           <article class="stage sec-panel sec-case" data-ai-id="slide-16-case" data-ai-role="card">
@@ -917,7 +919,7 @@
               <li>假網站沒有正確的憑證，瀏覽器跳出<b>警告</b></li>
               <li>不少人按「繼續前往」並輸入錢包私鑰，約 <b>15 萬美元</b>的以太幣被偷走</li>
             </ol>
-            <p class="case-lesson">💡 憑證警告就是在說「對方可能不是本人」</p>
+            <p class="case-lesson"><svg class="ic" aria-hidden="true"><use href="#i-lightbulb"/></svg> 憑證警告就是在說「對方可能不是本人」</p>
           </article>
         </div>
       </section>
@@ -925,14 +927,14 @@
       <section class="slide slide-light slide-build slide-sec slide-sec-one" data-slide-id="slide-19" data-step="0" aria-hidden="true">
         <header class="git-header sec-head">
           <p class="eyebrow" data-ai-id="slide-19-eyebrow" data-ai-role="label">// Security 101 · 07</p>
-          <h2 data-ai-id="slide-19-title" data-ai-role="title">🔐 Crypto <span class="accent">密碼學</span><small>加密、雜湊與驗證的保證</small></h2>
+          <h2 data-ai-id="slide-19-title" data-ai-role="title"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-lock-keyhole"/></svg></span>Crypto <span class="accent">密碼學</span><small>加密、雜湊與驗證的保證</small></h2>
         </header>
         <div class="sec-pair">
           <article class="stage active sec-panel" data-ai-id="slide-19-concept" data-ai-role="card">
             <div class="crypto-row">
               <p class="crypto-kind">加密 Encryption<span>有金鑰就能<b>解密</b>回來 → 防偷看</span></p>
               <div class="sec-flow">
-                <span class="node mono">hello</span><i>+🔑→</i><span class="node mono">x9#Lq@2z</span>
+                <span class="node mono">hello</span><i>+<svg class="ic" aria-hidden="true"><use href="#i-key"/></svg>→</i><span class="node mono">x9#Lq@2z</span>
               </div>
               <p class="crypto-eg"><b>例子｜傳 LINE 訊息</b>你打「明天考試範圍？」，傳出去是一串亂碼，只有同學的手機能用金鑰解開。中間被攔截，也看不懂。</p>
             </div>
@@ -952,7 +954,7 @@
               <li>用的是又快、又沒「加鹽」的 SHA-1：一樣的密碼，雜湊也一模一樣</li>
               <li>駭客拿常見密碼表一個個算來比對，<b>很快就破解大半</b>，最多人用的是 <code>123456</code></li>
             </ol>
-            <p class="case-lesson">💡 存密碼要用 bcrypt 這類慢雜湊 + 加鹽；自己也別用 123456</p>
+            <p class="case-lesson"><svg class="ic" aria-hidden="true"><use href="#i-lightbulb"/></svg> 存密碼要用 bcrypt 這類慢雜湊 + 加鹽；自己也別用 123456</p>
           </article>
         </div>
       </section>
@@ -970,12 +972,12 @@
       <section class="slide slide-light slide-sec slide-tree" data-slide-id="slide-21" data-step="0" aria-hidden="true">
         <header class="git-header sec-head">
           <p class="eyebrow" data-ai-id="slide-21-eyebrow" data-ai-role="label">// Learning Path · 01</p>
-          <h2 data-ai-id="slide-21-title" data-ai-role="title">🎨 前端 <span class="accent">技能樹</span><small>使用者看得到、摸得到的畫面</small></h2>
+          <h2 data-ai-id="slide-21-title" data-ai-role="title"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-palette"/></svg></span>前端 <span class="accent">技能樹</span><small>使用者看得到、摸得到的畫面</small></h2>
         </header>
         <div class="tree-pair">
           <svg class="tree-svg" viewBox="0 0 880 640" role="img" aria-label="技能樹" data-ai-id="slide-21-tree" data-ai-role="image"><defs><linearGradient id="g21-0" gradientUnits="userSpaceOnUse" x1="175" y1="102" x2="144" y2="142"><stop offset="0" stop-color="#1572B6"/><stop offset="1" stop-color="#06B6D4"/></linearGradient><linearGradient id="g21-1" gradientUnits="userSpaceOnUse" x1="600" y1="102" x2="550" y2="147"><stop offset="0" stop-color="#e0c60a"/><stop offset="1" stop-color="#3178C6"/></linearGradient><linearGradient id="g21-2" gradientUnits="userSpaceOnUse" x1="600" y1="102" x2="733" y2="158"><stop offset="0" stop-color="#e0c60a"/><stop offset="1" stop-color="#64748b"/></linearGradient><linearGradient id="g21-3" gradientUnits="userSpaceOnUse" x1="120" y1="236" x2="215" y2="289"><stop offset="0" stop-color="#06B6D4"/><stop offset="1" stop-color="#41b883"/></linearGradient><linearGradient id="g21-4" gradientUnits="userSpaceOnUse" x1="400" y1="102" x2="274" y2="276"><stop offset="0" stop-color="#E34F26"/><stop offset="1" stop-color="#41b883"/></linearGradient><linearGradient id="g21-5" gradientUnits="userSpaceOnUse" x1="400" y1="102" x2="424" y2="268"><stop offset="0" stop-color="#E34F26"/><stop offset="1" stop-color="#22b8e0"/></linearGradient><linearGradient id="g21-6" gradientUnits="userSpaceOnUse" x1="520" y1="236" x2="461" y2="283"><stop offset="0" stop-color="#3178C6"/><stop offset="1" stop-color="#22b8e0"/></linearGradient><linearGradient id="g21-7" gradientUnits="userSpaceOnUse" x1="520" y1="236" x2="606" y2="287"><stop offset="0" stop-color="#3178C6"/><stop offset="1" stop-color="#DD0031"/></linearGradient><linearGradient id="g21-8" gradientUnits="userSpaceOnUse" x1="430" y1="370" x2="335" y2="423"><stop offset="0" stop-color="#22b8e0"/><stop offset="1" stop-color="#0f172a"/></linearGradient><linearGradient id="g21-9" gradientUnits="userSpaceOnUse" x1="430" y1="370" x2="439" y2="403"><stop offset="0" stop-color="#22b8e0"/><stop offset="1" stop-color="#0f172a"/></linearGradient><linearGradient id="g21-10" gradientUnits="userSpaceOnUse" x1="430" y1="370" x2="573" y2="427"><stop offset="0" stop-color="#22b8e0"/><stop offset="1" stop-color="#22b8e0"/></linearGradient><linearGradient id="g21-11" gradientUnits="userSpaceOnUse" x1="300" y1="504" x2="300" y2="536"><stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs><text class="lv" x="0" y="46.0">基礎</text><text class="lv" x="0" y="180.0">工具</text><text class="lv" x="0" y="314.0">框架</text><text class="lv" x="0" y="448.0">React 延伸</text><text class="lv" x="0" y="582.0">部署</text><g class="dedges"><line x1="175" y1="102" x2="149" y2="136" stroke="url(#g21-0)"/><path d="M0 0L-12 -6L-12 6z" fill="#06B6D4" transform="translate(144 142) rotate(127)"/><line x1="600" y1="102" x2="556" y2="142" stroke="url(#g21-1)"/><path d="M0 0L-12 -6L-12 6z" fill="#3178C6" transform="translate(550 147) rotate(138)"/><line x1="600" y1="102" x2="726" y2="155" stroke="url(#g21-2)"/><path d="M0 0L-12 -6L-12 6z" fill="#64748b" transform="translate(733 158) rotate(23)"/><line x1="120" y1="236" x2="208" y2="285" stroke="url(#g21-3)"/><path d="M0 0L-12 -6L-12 6z" fill="#41b883" transform="translate(215 289) rotate(29)"/><line x1="400" y1="102" x2="278" y2="269" stroke="url(#g21-4)"/><path d="M0 0L-12 -6L-12 6z" fill="#41b883" transform="translate(274 276) rotate(126)"/><line x1="400" y1="102" x2="423" y2="261" stroke="url(#g21-5)"/><path d="M0 0L-12 -6L-12 6z" fill="#22b8e0" transform="translate(424 268) rotate(82)"/><line x1="520" y1="236" x2="467" y2="278" stroke="url(#g21-6)"/><path d="M0 0L-12 -6L-12 6z" fill="#22b8e0" transform="translate(461 283) rotate(141)"/><line x1="520" y1="236" x2="599" y2="283" stroke="url(#g21-7)"/><path d="M0 0L-12 -6L-12 6z" fill="#DD0031" transform="translate(606 287) rotate(31)"/><line x1="430" y1="370" x2="342" y2="419" stroke="url(#g21-8)"/><path d="M0 0L-12 -6L-12 6z" fill="#0f172a" transform="translate(335 423) rotate(151)"/><line x1="430" y1="370" x2="437" y2="396" stroke="url(#g21-9)"/><path d="M0 0L-12 -6L-12 6z" fill="#0f172a" transform="translate(439 403) rotate(74)"/><line x1="430" y1="370" x2="565" y2="424" stroke="url(#g21-10)"/><path d="M0 0L-12 -6L-12 6z" fill="#22b8e0" transform="translate(573 427) rotate(22)"/><line x1="300" y1="504" x2="300" y2="528" stroke="url(#g21-11)"/><path d="M0 0L-12 -6L-12 6z" fill="#0f172a" transform="translate(300 536) rotate(90)"/></g><g class="dnode" style="transform-origin: 175px 40.0px"><circle cx="175" cy="40.0" r="32" stroke="#1572B6"/><image href="./images/tech/css3.svg" x="156" y="21.0" width="38" height="38"/><text class="dl" x="175" y="93.0">CSS</text></g><g class="dnode" style="transform-origin: 400px 40.0px"><circle cx="400" cy="40.0" r="32" stroke="#E34F26"/><image href="./images/tech/html5.svg" x="381" y="21.0" width="38" height="38"/><text class="dl" x="400" y="93.0">HTML</text></g><g class="dnode" style="transform-origin: 600px 40.0px"><circle cx="600" cy="40.0" r="32" stroke="#e0c60a"/><image href="./images/tech/javascript.svg" x="581" y="21.0" width="38" height="38"/><text class="dl" x="600" y="93.0">JavaScript</text></g><g class="dnode dead" style="transform-origin: 770px 40.0px"><circle cx="770" cy="40.0" r="32" stroke="#94a3b8"/><image href="./images/tech/jquery.svg" x="751" y="21.0" width="38" height="38"/><line class="slash" x1="748" y1="62.0" x2="792" y2="18.0"/><text class="dl" x="770" y="93.0">jQuery</text><text class="dtag" x="770" y="112.0">已過時</text></g><g class="dnode" style="transform-origin: 120px 174.0px"><circle class="hl-ring" cx="120" cy="174.0" r="40" stroke="#06B6D4" data-from="10"/><circle cx="120" cy="174.0" r="32" stroke="#06B6D4"/><image href="./images/tech/tailwindcss.svg" x="101" y="155.0" width="38" height="38"/><text class="dl" x="120" y="227.0">Tailwind CSS</text></g><g class="dnode dead" style="transform-origin: 250px 174.0px"><circle cx="250" cy="174.0" r="32" stroke="#94a3b8"/><image href="./images/tech/bootstrap.svg" x="231" y="155.0" width="38" height="38"/><line class="slash" x1="228" y1="196.0" x2="272" y2="152.0"/><text class="dl" x="250" y="227.0">Bootstrap</text><text class="dtag" x="250" y="246.0">已過時</text></g><g class="dnode" style="transform-origin: 520px 174.0px"><circle class="hl-ring" cx="520" cy="174.0" r="40" stroke="#3178C6" data-from="10"/><circle cx="520" cy="174.0" r="32" stroke="#3178C6"/><image href="./images/tech/typescript.svg" x="501" y="155.0" width="38" height="38"/><text class="dl" x="520" y="227.0">TypeScript</text></g><g class="dnode" style="transform-origin: 770px 174.0px"><circle cx="770" cy="174.0" r="32" stroke="#64748b"/><image href="./images/tech/json.svg" x="751" y="155.0" width="38" height="38"/><text class="dl" x="770" y="227.0">JSON · API</text><text class="dtag" x="770" y="246.0">與後端溝通 · Axios</text></g><g class="dnode" style="transform-origin: 250px 308.0px"><circle cx="250" cy="308.0" r="32" stroke="#41b883"/><image href="./images/tech/vuedotjs.svg" x="231" y="289.0" width="38" height="38"/><text class="dl" x="250" y="361.0">Vue</text></g><g class="dnode" style="transform-origin: 430px 308.0px"><circle class="hl-ring" cx="430" cy="308.0" r="40" stroke="#22b8e0" data-from="10"/><circle cx="430" cy="308.0" r="32" stroke="#22b8e0"/><image href="./images/tech/react.svg" x="411" y="289.0" width="38" height="38"/><text class="dl" x="430" y="361.0">React</text></g><g class="dnode" style="transform-origin: 640px 308.0px"><circle cx="640" cy="308.0" r="32" stroke="#DD0031"/><image href="./images/tech/angular.svg" x="621" y="289.0" width="38" height="38"/><text class="dl" x="640" y="361.0">Angular</text></g><g class="dnode" style="transform-origin: 300px 442.0px"><circle class="hl-ring" cx="300" cy="442.0" r="40" stroke="#0f172a" data-from="10"/><circle cx="300" cy="442.0" r="32" stroke="#0f172a"/><image href="./images/tech/nextdotjs.svg" x="281" y="423.0" width="38" height="38"/><text class="dl" x="300" y="495.0">Next.js</text></g><g class="dnode" style="transform-origin: 450px 442.0px"><circle cx="450" cy="442.0" r="32" stroke="#0f172a"/><image href="./images/tech/remix.svg" x="431" y="423.0" width="38" height="38"/><text class="dl" x="450" y="495.0">Remix</text></g><g class="dnode" style="transform-origin: 610px 442.0px"><circle cx="610" cy="442.0" r="32" stroke="#22b8e0"/><image href="./images/tech/react.svg" x="591" y="423.0" width="38" height="38"/><text class="dl" x="610" y="495.0">React Native</text><text class="dtag" x="610" y="514.0">做手機 App</text></g><g class="dnode" style="transform-origin: 300px 576.0px"><circle cx="300" cy="576.0" r="32" stroke="#0f172a"/><image href="./images/tech/vercel.svg" x="281" y="557.0" width="38" height="38"/><text class="dl" x="300" y="629.0">Vercel</text></g><g class="badge" data-from="1" transform="translate(424 16.0)"><circle r="13"/><text class="num" data-from="2" y="5">1</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="2" transform="translate(199 16.0)"><circle r="13"/><text class="num" data-from="3" y="5">2</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="3" transform="translate(624 16.0)"><circle r="13"/><text class="num" data-from="4" y="5">3</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="4" transform="translate(794 150.0)"><circle r="13"/><text class="num" data-from="5" y="5">4</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="5" transform="translate(144 150.0)"><circle r="13"/><text class="num" data-from="6" y="5">5</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="6" transform="translate(454 284.0)"><circle r="13"/><text class="num" data-from="7" y="5">6</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="7" transform="translate(324 418.0)"><circle r="13"/><text class="num" data-from="8" y="5">7</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="8" transform="translate(324 552.0)"><circle r="13"/><text class="num" data-from="9" y="5">8</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g></svg>
           <aside class="tree-keys" data-ai-id="slide-21-keys" data-ai-role="card">
-            <p class="keys-title">🔑 關鍵字</p>
+            <p class="keys-title"><svg class="ic" aria-hidden="true"><use href="#i-key-round"/></svg> 關鍵字</p>
             <dl>
               <div><dt>DOM</dt><dd>網頁的樹狀結構，JS 改它畫面就跟著變</dd></div>
               <div><dt>RWD</dt><dd>響應式設計，手機、電腦都排得好看</dd></div>
@@ -992,12 +994,12 @@
       <section class="slide slide-light slide-sec slide-tree" data-slide-id="slide-22" data-step="0" aria-hidden="true">
         <header class="git-header sec-head">
           <p class="eyebrow" data-ai-id="slide-22-eyebrow" data-ai-role="label">// Learning Path · 02</p>
-          <h2 data-ai-id="slide-22-title" data-ai-role="title">🗄️ 後端 <span class="accent">技能樹</span><small>看不到的伺服器、資料與邏輯</small></h2>
+          <h2 data-ai-id="slide-22-title" data-ai-role="title"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-server"/></svg></span>後端 <span class="accent">技能樹</span><small>看不到的伺服器、資料與邏輯</small></h2>
         </header>
         <div class="tree-pair">
           <svg class="tree-svg" viewBox="0 0 880 640" role="img" aria-label="技能樹" data-ai-id="slide-22-tree" data-ai-role="image"><defs><linearGradient id="g22-0" gradientUnits="userSpaceOnUse" x1="175" y1="169" x2="141" y2="210"><stop offset="0" stop-color="#3776AB"/><stop offset="1" stop-color="#009688"/></linearGradient><linearGradient id="g22-1" gradientUnits="userSpaceOnUse" x1="175" y1="169" x2="209" y2="210"><stop offset="0" stop-color="#3776AB"/><stop offset="1" stop-color="#0f172a"/></linearGradient><linearGradient id="g22-2" gradientUnits="userSpaceOnUse" x1="490" y1="169" x2="404" y2="220"><stop offset="0" stop-color="#5FA04E"/><stop offset="1" stop-color="#0f172a"/></linearGradient><linearGradient id="g22-3" gradientUnits="userSpaceOnUse" x1="490" y1="169" x2="490" y2="201"><stop offset="0" stop-color="#5FA04E"/><stop offset="1" stop-color="#E0234E"/></linearGradient><linearGradient id="g22-4" gradientUnits="userSpaceOnUse" x1="490" y1="169" x2="576" y2="220"><stop offset="0" stop-color="#5FA04E"/><stop offset="1" stop-color="#00b86b"/></linearGradient><linearGradient id="g22-5" gradientUnits="userSpaceOnUse" x1="790" y1="169" x2="790" y2="201"><stop offset="0" stop-color="#d4a106"/><stop offset="1" stop-color="#2496ED"/></linearGradient><linearGradient id="g22-6" gradientUnits="userSpaceOnUse" x1="115" y1="303" x2="117" y2="335"><stop offset="0" stop-color="#009688"/><stop offset="1" stop-color="#4169E1"/></linearGradient><linearGradient id="g22-7" gradientUnits="userSpaceOnUse" x1="235" y1="321" x2="156" y2="358"><stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#4169E1"/></linearGradient><linearGradient id="g22-8" gradientUnits="userSpaceOnUse" x1="370" y1="303" x2="572" y2="364"><stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#47A248"/></linearGradient><linearGradient id="g22-9" gradientUnits="userSpaceOnUse" x1="490" y1="303" x2="576" y2="354"><stop offset="0" stop-color="#E0234E"/><stop offset="1" stop-color="#47A248"/></linearGradient><linearGradient id="g22-10" gradientUnits="userSpaceOnUse" x1="610" y1="321" x2="610" y2="335"><stop offset="0" stop-color="#00b86b"/><stop offset="1" stop-color="#47A248"/></linearGradient><linearGradient id="g22-11" gradientUnits="userSpaceOnUse" x1="120" y1="437" x2="118" y2="469"><stop offset="0" stop-color="#4169E1"/><stop offset="1" stop-color="#FF4438"/></linearGradient><linearGradient id="g22-12" gradientUnits="userSpaceOnUse" x1="120" y1="437" x2="253" y2="493"><stop offset="0" stop-color="#4169E1"/><stop offset="1" stop-color="#FF6600"/></linearGradient><linearGradient id="g22-13" gradientUnits="userSpaceOnUse" x1="610" y1="437" x2="486" y2="493"><stop offset="0" stop-color="#47A248"/><stop offset="1" stop-color="#FF9900"/></linearGradient><linearGradient id="g22-14" gradientUnits="userSpaceOnUse" x1="610" y1="437" x2="614" y2="469"><stop offset="0" stop-color="#47A248"/><stop offset="1" stop-color="#4285F4"/></linearGradient><linearGradient id="g22-15" gradientUnits="userSpaceOnUse" x1="790" y1="303" x2="790" y2="469"><stop offset="0" stop-color="#2496ED"/><stop offset="1" stop-color="#326CE5"/></linearGradient></defs><text class="lv" x="0" y="113.0">語言</text><text class="lv" x="0" y="247.0">框架</text><text class="lv" x="0" y="381.0">資料</text><text class="lv" x="0" y="515.0">部署</text><g class="dedges"><line x1="175" y1="169" x2="146" y2="204" stroke="url(#g22-0)"/><path d="M0 0L-12 -6L-12 6z" fill="#009688" transform="translate(141 210) rotate(130)"/><line x1="175" y1="169" x2="204" y2="204" stroke="url(#g22-1)"/><path d="M0 0L-12 -6L-12 6z" fill="#0f172a" transform="translate(209 210) rotate(50)"/><line x1="490" y1="169" x2="411" y2="216" stroke="url(#g22-2)"/><path d="M0 0L-12 -6L-12 6z" fill="#0f172a" transform="translate(404 220) rotate(149)"/><line x1="490" y1="169" x2="490" y2="193" stroke="url(#g22-3)"/><path d="M0 0L-12 -6L-12 6z" fill="#E0234E" transform="translate(490 201) rotate(90)"/><line x1="490" y1="169" x2="569" y2="216" stroke="url(#g22-4)"/><path d="M0 0L-12 -6L-12 6z" fill="#00b86b" transform="translate(576 220) rotate(31)"/><line x1="790" y1="169" x2="790" y2="193" stroke="url(#g22-5)"/><path d="M0 0L-12 -6L-12 6z" fill="#2496ED" transform="translate(790 201) rotate(90)"/><line x1="115" y1="303" x2="117" y2="327" stroke="url(#g22-6)"/><path d="M0 0L-12 -6L-12 6z" fill="#4169E1" transform="translate(117 335) rotate(86)"/><line x1="235" y1="321" x2="163" y2="355" stroke="url(#g22-7)"/><path d="M0 0L-12 -6L-12 6z" fill="#4169E1" transform="translate(156 358) rotate(155)"/><line x1="370" y1="303" x2="564" y2="361" stroke="url(#g22-8)"/><path d="M0 0L-12 -6L-12 6z" fill="#47A248" transform="translate(572 364) rotate(17)"/><line x1="490" y1="303" x2="569" y2="350" stroke="url(#g22-9)"/><path d="M0 0L-12 -6L-12 6z" fill="#47A248" transform="translate(576 354) rotate(31)"/><line x1="610" y1="321" x2="610" y2="327" stroke="url(#g22-10)"/><path d="M0 0L-12 -6L-12 6z" fill="#47A248" transform="translate(610 335) rotate(90)"/><line x1="120" y1="437" x2="118" y2="461" stroke="url(#g22-11)"/><path d="M0 0L-12 -6L-12 6z" fill="#FF4438" transform="translate(118 469) rotate(94)"/><line x1="120" y1="437" x2="246" y2="490" stroke="url(#g22-12)"/><path d="M0 0L-12 -6L-12 6z" fill="#FF6600" transform="translate(253 493) rotate(23)"/><line x1="610" y1="437" x2="494" y2="489" stroke="url(#g22-13)"/><path d="M0 0L-12 -6L-12 6z" fill="#FF9900" transform="translate(486 493) rotate(156)"/><line x1="610" y1="437" x2="613" y2="461" stroke="url(#g22-14)"/><path d="M0 0L-12 -6L-12 6z" fill="#4285F4" transform="translate(614 469) rotate(82)"/><line x1="790" y1="303" x2="790" y2="461" stroke="url(#g22-15)"/><path d="M0 0L-12 -6L-12 6z" fill="#326CE5" transform="translate(790 469) rotate(90)"/></g><g class="dnode" style="transform-origin: 175px 107.0px"><circle cx="175" cy="107.0" r="32" stroke="#3776AB"/><image href="./images/tech/python.svg" x="156" y="88.0" width="38" height="38"/><text class="dl" x="175" y="160.0">Python</text></g><g class="dnode" style="transform-origin: 490px 107.0px"><circle cx="490" cy="107.0" r="32" stroke="#5FA04E"/><image href="./images/tech/nodedotjs.svg" x="471" y="88.0" width="38" height="38"/><text class="dl" x="490" y="160.0">Node.js</text></g><g class="dnode" style="transform-origin: 790px 107.0px"><circle cx="790" cy="107.0" r="32" stroke="#d4a106"/><image href="./images/tech/linux.svg" x="771" y="88.0" width="38" height="38"/><text class="dl" x="790" y="160.0">Linux</text></g><g class="dnode" style="transform-origin: 115px 241.0px"><circle class="hl-ring" cx="115" cy="241.0" r="40" stroke="#009688" data-from="9"/><circle cx="115" cy="241.0" r="32" stroke="#009688"/><image href="./images/tech/fastapi.svg" x="96" y="222.0" width="38" height="38"/><text class="dl" x="115" y="294.0">FastAPI</text></g><g class="dnode" style="transform-origin: 235px 241.0px"><circle cx="235" cy="241.0" r="32" stroke="#0f172a"/><image href="./images/tech/flask.svg" x="216" y="222.0" width="38" height="38"/><text class="dl" x="235" y="294.0">Flask</text><text class="dtag" x="235" y="313.0">全端框架</text></g><g class="dnode" style="transform-origin: 370px 241.0px"><circle class="hl-ring" cx="370" cy="241.0" r="40" stroke="#0f172a" data-from="9"/><circle cx="370" cy="241.0" r="32" stroke="#0f172a"/><image href="./images/tech/express.svg" x="351" y="222.0" width="38" height="38"/><text class="dl" x="370" y="294.0">Express</text></g><g class="dnode" style="transform-origin: 490px 241.0px"><circle cx="490" cy="241.0" r="32" stroke="#E0234E"/><image href="./images/tech/nestjs.svg" x="471" y="222.0" width="38" height="38"/><text class="dl" x="490" y="294.0">NestJS</text></g><g class="dnode" style="transform-origin: 610px 241.0px"><circle cx="610" cy="241.0" r="32" stroke="#00b86b"/><image href="./images/tech/nuxtdotjs.svg" x="591" y="222.0" width="38" height="38"/><text class="dl" x="610" y="294.0">Nuxt</text><text class="dtag" x="610" y="313.0">全端框架</text></g><g class="dnode" style="transform-origin: 790px 241.0px"><circle class="hl-ring" cx="790" cy="241.0" r="40" stroke="#2496ED" data-from="9"/><circle cx="790" cy="241.0" r="32" stroke="#2496ED"/><image href="./images/tech/docker.svg" x="771" y="222.0" width="38" height="38"/><text class="dl" x="790" y="294.0">Docker</text></g><g class="dnode" style="transform-origin: 120px 375.0px"><circle class="hl-ring" cx="120" cy="375.0" r="40" stroke="#4169E1" data-from="9"/><circle cx="120" cy="375.0" r="32" stroke="#4169E1"/><image href="./images/tech/postgresql.svg" x="101" y="356.0" width="38" height="38"/><text class="dl" x="120" y="428.0">PostgreSQL</text></g><g class="dnode dead" style="transform-origin: 235px 375.0px"><circle cx="235" cy="375.0" r="32" stroke="#94a3b8"/><image href="./images/tech/mysql.svg" x="216" y="356.0" width="38" height="38"/><line class="slash" x1="213" y1="397.0" x2="257" y2="353.0"/><text class="dl" x="235" y="428.0">MySQL</text><text class="dtag" x="235" y="447.0">已過時</text></g><g class="dnode" style="transform-origin: 350px 375.0px"><circle cx="350" cy="375.0" r="32" stroke="#CC2927"/><image href="./images/tech/microsoftsqlserver.svg" x="331" y="356.0" width="38" height="38"/><text class="dl" x="350" y="428.0">SQL Server</text></g><g class="dnode" style="transform-origin: 460px 375.0px"><circle cx="460" cy="375.0" r="32" stroke="#F80000"/><image href="./images/tech/oracle.svg" x="441" y="356.0" width="38" height="38"/><text class="dl" x="460" y="428.0">Oracle</text></g><g class="dnode" style="transform-origin: 610px 375.0px"><circle class="hl-ring" cx="610" cy="375.0" r="40" stroke="#47A248" data-from="9"/><circle cx="610" cy="375.0" r="32" stroke="#47A248"/><image href="./images/tech/mongodb.svg" x="591" y="356.0" width="38" height="38"/><text class="dl" x="610" y="428.0">MongoDB</text></g><g class="dnode" style="transform-origin: 115px 509.0px"><circle cx="115" cy="509.0" r="32" stroke="#FF4438"/><image href="./images/tech/redis.svg" x="96" y="490.0" width="38" height="38"/><text class="dl" x="115" y="562.0">Redis</text></g><g class="dnode" style="transform-origin: 290px 509.0px"><circle cx="290" cy="509.0" r="32" stroke="#FF6600"/><image href="./images/tech/rabbitmq.svg" x="271" y="490.0" width="38" height="38"/><text class="dl" x="290" y="562.0">RabbitMQ</text></g><g class="dnode" style="transform-origin: 450px 509.0px"><circle cx="450" cy="509.0" r="32" stroke="#FF9900"/><image href="./images/tech/amazonec2.svg" x="431" y="490.0" width="38" height="38"/><text class="dl" x="450" y="562.0">AWS EC2</text></g><g class="dnode" style="transform-origin: 620px 509.0px"><circle class="hl-ring" cx="620" cy="509.0" r="40" stroke="#4285F4" data-from="9"/><circle cx="620" cy="509.0" r="32" stroke="#4285F4"/><image href="./images/tech/googlecloud.svg" x="601" y="490.0" width="38" height="38"/><text class="dl" x="620" y="562.0">Google Cloud</text></g><g class="dnode" style="transform-origin: 790px 509.0px"><circle cx="790" cy="509.0" r="32" stroke="#326CE5"/><image href="./images/tech/kubernetes.svg" x="771" y="490.0" width="38" height="38"/><text class="dl" x="790" y="562.0">Kubernetes</text></g><g class="badge" data-from="1" transform="translate(199 83.0)"><circle r="13"/><text class="num" data-from="2" y="5">1</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="2" transform="translate(259 217.0)"><circle r="13"/><text class="num" data-from="3" y="5">2</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="3" transform="translate(514 83.0)"><circle r="13"/><text class="num" data-from="4" y="5">3</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="4" transform="translate(394 217.0)"><circle r="13"/><text class="num" data-from="5" y="5">4</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="5" transform="translate(144 351.0)"><circle r="13"/><text class="num" data-from="6" y="5">5</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="6" transform="translate(814 217.0)"><circle r="13"/><text class="num" data-from="7" y="5">6</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="7" transform="translate(644 485.0)"><circle r="13"/><text class="num" data-from="8" y="5">7</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g></svg>
           <aside class="tree-keys" data-ai-id="slide-22-keys" data-ai-role="card">
-            <p class="keys-title">🔑 關鍵字</p>
+            <p class="keys-title"><svg class="ic" aria-hidden="true"><use href="#i-key-round"/></svg> 關鍵字</p>
             <dl>
               <div><dt>伺服器 Server</dt><dd>24 小時開著的電腦，接請求、回結果</dd></div>
               <div><dt>HTTP</dt><dd>瀏覽器跟伺服器說話的規則：GET、POST</dd></div>
@@ -1014,12 +1016,12 @@
       <section class="slide slide-light slide-sec slide-tree" data-slide-id="slide-23" data-step="0" aria-hidden="true">
         <header class="git-header sec-head">
           <p class="eyebrow" data-ai-id="slide-23-eyebrow" data-ai-role="label">// Learning Path · 03</p>
-          <h2 data-ai-id="slide-23-title" data-ai-role="title">🧰 程式<span class="accent">輔助工具</span></h2>
+          <h2 data-ai-id="slide-23-title" data-ai-role="title"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-wrench"/></svg></span>程式<span class="accent">輔助工具</span></h2>
         </header>
         <div class="tree-pair">
           <svg class="tree-svg" viewBox="0 0 880 640" role="img" aria-label="技能樹" data-ai-id="slide-23-tree" data-ai-role="image"><defs></defs><text class="lv" x="0" y="46.0">編輯器</text><text class="lv" x="0" y="180.0">查資料</text><text class="lv" x="0" y="314.0">版本控制</text><text class="lv" x="0" y="448.0">除錯</text><text class="lv" x="0" y="582.0">自動化</text><g class="dedges"></g><g class="dnode" style="transform-origin: 165px 40.0px"><circle cx="165" cy="40.0" r="32" stroke="#019733"/><image href="./images/tech/vim.svg" x="146" y="21.0" width="38" height="38"/><text class="dl" x="165" y="93.0">Vim</text></g><g class="dnode" style="transform-origin: 330px 40.0px"><circle cx="330" cy="40.0" r="32" stroke="#7c00cd"/><image href="./images/tech/nano.svg" x="311" y="21.0" width="38" height="38"/><text class="dl" x="330" y="93.0">nano</text></g><g class="dnode" style="transform-origin: 550px 40.0px"><circle cx="550" cy="40.0" r="32" stroke="#007ACC"/><image href="./images/tech/visualstudiocode.svg" x="531" y="21.0" width="38" height="38"/><text class="dl" x="550" y="93.0">VS Code</text></g><g class="dnode" style="transform-origin: 715px 40.0px"><circle cx="715" cy="40.0" r="32" stroke="#0f172a"/><image href="./images/tech/jetbrains.svg" x="696" y="21.0" width="38" height="38"/><text class="dl" x="715" y="93.0">JetBrains</text></g><g class="dnode" style="transform-origin: 220px 174.0px"><circle cx="220" cy="174.0" r="32" stroke="#4285F4"/><image href="./images/tech/google.svg" x="201" y="155.0" width="38" height="38"/><text class="dl" x="220" y="227.0">Google 搜尋</text></g><g class="dnode" style="transform-origin: 440px 174.0px"><circle cx="440" cy="174.0" r="32" stroke="#F58025"/><image href="./images/tech/stackoverflow.svg" x="421" y="155.0" width="38" height="38"/><text class="dl" x="440" y="227.0">Stack Overflow</text></g><g class="dnode" style="transform-origin: 660px 174.0px"><circle cx="660" cy="174.0" r="32" stroke="#0f172a"/><image href="./images/tech/mdnwebdocs.svg" x="641" y="155.0" width="38" height="38"/><text class="dl" x="660" y="227.0">MDN 文件</text></g><g class="dnode" style="transform-origin: 440px 308.0px"><circle cx="440" cy="308.0" r="32" stroke="#F05032"/><image href="./images/tech/git.svg" x="421" y="289.0" width="38" height="38"/><text class="dl" x="440" y="361.0">Git</text></g><g class="dnode" style="transform-origin: 220px 442.0px"><circle cx="220" cy="442.0" r="32" stroke="#4285F4"/><image href="./images/tech/googlechrome.svg" x="201" y="423.0" width="38" height="38"/><text class="dl" x="220" y="495.0">Chrome DevTools</text></g><g class="dnode" style="transform-origin: 440px 442.0px"><circle cx="440" cy="442.0" r="32" stroke="#FF6C37"/><image href="./images/tech/postman.svg" x="421" y="423.0" width="38" height="38"/><text class="dl" x="440" y="495.0">Postman</text><text class="dtag" x="440" y="514.0">測 API</text></g><g class="dnode" style="transform-origin: 660px 442.0px"><circle cx="660" cy="442.0" r="32" stroke="#4B32C3"/><image href="./images/tech/eslint.svg" x="641" y="423.0" width="38" height="38"/><text class="dl" x="660" y="495.0">ESLint</text><text class="dtag" x="660" y="514.0">檢查寫法</text></g><g class="dnode" style="transform-origin: 330px 576.0px"><circle cx="330" cy="576.0" r="32" stroke="#181717"/><image href="./images/tech/github.svg" x="311" y="557.0" width="38" height="38"/><text class="dl" x="330" y="629.0">GitHub</text></g><g class="dnode" style="transform-origin: 550px 576.0px"><circle cx="550" cy="576.0" r="32" stroke="#2088FF"/><image href="./images/tech/githubactions.svg" x="531" y="557.0" width="38" height="38"/><text class="dl" x="550" y="629.0">GitHub Actions</text><text class="dtag" x="550" y="648.0">自動測試部署</text></g><g class="badge" data-from="1" transform="translate(574 16.0)"><circle r="13"/><text class="num" data-from="2" y="5">1</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="2" transform="translate(464 284.0)"><circle r="13"/><text class="num" data-from="3" y="5">2</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="3" transform="translate(464 418.0)"><circle r="13"/><text class="num" data-from="4" y="5">3</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="4" transform="translate(244 418.0)"><circle r="13"/><text class="num" data-from="5" y="5">4</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="big-x" data-from="6"><rect x="60" y="0" width="820" height="640" rx="24"/><path d="M150 70L790 570M790 70L150 570"/></g></svg>
           <aside class="tree-keys" data-ai-id="slide-23-keys" data-ai-role="card">
-            <p class="keys-title">🔑 關鍵字</p>
+            <p class="keys-title"><svg class="ic" aria-hidden="true"><use href="#i-key-round"/></svg> 關鍵字</p>
             <dl>
               <div><dt>IDE / 編輯器</dt><dd>寫程式的軟體，有提示、除錯、外掛</dd></div>
               <div><dt>Stack Overflow</dt><dd>工程師問答網站，錯誤幾乎都有人問過</dd></div>
@@ -1036,12 +1038,12 @@
       <section class="slide slide-light slide-sec slide-tree" data-slide-id="slide-24" data-step="0" aria-hidden="true">
         <header class="git-header sec-head">
           <p class="eyebrow" data-ai-id="slide-24-eyebrow" data-ai-role="label">// Learning Path · 04</p>
-          <h2 data-ai-id="slide-24-title" data-ai-role="title">🤖 寫程式工具 <span class="accent">(AI 時代)</span></h2>
+          <h2 data-ai-id="slide-24-title" data-ai-role="title"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-bot"/></svg></span>寫程式工具 <span class="accent">(AI 時代)</span></h2>
         </header>
         <div class="tree-pair">
-          <svg class="tree-svg" viewBox="0 0 880 640" role="img" aria-label="技能樹" data-ai-id="slide-24-tree" data-ai-role="image"><defs></defs><text class="lv" x="0" y="113.0">聊天</text><text class="lv" x="0" y="247.0">編輯器</text><text class="lv" x="0" y="381.0">Agent</text><text class="lv" x="0" y="515.0">進階</text><rect class="band" x="80" y="71" width="720" height="96" rx="18"/><rect class="band" x="80" y="205" width="720" height="96" rx="18"/><line class="band-arrow" x1="440.0" y1="171" x2="440.0" y2="192"/><path class="band-head" d="M431.0 190L449.0 190L440.0 201z"/><rect class="band" x="80" y="339" width="720" height="96" rx="18"/><line class="band-arrow" x1="440.0" y1="305" x2="440.0" y2="326"/><path class="band-head" d="M431.0 324L449.0 324L440.0 335z"/><rect class="band" x="80" y="473" width="720" height="96" rx="18"/><line class="band-arrow" x1="440.0" y1="439" x2="440.0" y2="460"/><path class="band-head" d="M431.0 458L449.0 458L440.0 469z"/><g class="dedges"></g><g class="dnode" style="transform-origin: 300px 107.0px"><circle cx="300" cy="107.0" r="32" stroke="#10a37f"/><image href="./images/ai-logos/chatgpt.svg" x="281" y="88.0" width="38" height="38"/><text class="dl" x="300" y="160.0">ChatGPT</text></g><g class="dnode" style="transform-origin: 580px 107.0px"><circle cx="580" cy="107.0" r="32" stroke="#4285F4"/><image href="./images/ai-logos/gemini.svg" x="561" y="88.0" width="38" height="38"/><text class="dl" x="580" y="160.0">Gemini</text></g><g class="dnode" style="transform-origin: 300px 241.0px"><circle cx="300" cy="241.0" r="32" stroke="#0f172a"/><image href="./images/tech/githubcopilot.svg" x="281" y="222.0" width="38" height="38"/><text class="dl" x="300" y="294.0">GitHub Copilot</text></g><g class="dnode" style="transform-origin: 580px 241.0px"><circle cx="580" cy="241.0" r="32" stroke="#0f172a"/><image href="./images/ai-logos/cursor.svg" x="561" y="222.0" width="38" height="38"/><text class="dl" x="580" y="294.0">Cursor</text></g><g class="dnode" style="transform-origin: 300px 375.0px"><circle class="hl-ring" cx="300" cy="375.0" r="40" stroke="#d97757" data-from="6"/><circle cx="300" cy="375.0" r="32" stroke="#d97757"/><image href="./images/ai-logos/claude.svg" x="281" y="356.0" width="38" height="38"/><text class="dl" x="300" y="428.0">Claude Code</text></g><g class="dnode" style="transform-origin: 580px 375.0px"><circle class="hl-ring" cx="580" cy="375.0" r="40" stroke="#0f172a" data-from="7"/><circle cx="580" cy="375.0" r="32" stroke="#0f172a"/><image href="./images/ai-logos/codex.svg" x="561" y="356.0" width="38" height="38"/><text class="dl" x="580" y="428.0">Codex</text></g><g class="dnode" style="transform-origin: 160px 509.0px"><circle class="hl-ring" cx="160" cy="509.0" r="40" stroke="#64748b" data-from="8"/><circle cx="160" cy="509.0" r="32" stroke="#64748b"/><text class="emoji" x="160" y="520.0">📄</text><text class="dl" x="160" y="562.0">專案規則 .md</text></g><g class="dnode" style="transform-origin: 347px 509.0px"><circle class="hl-ring" cx="347" cy="509.0" r="40" stroke="#0f172a" data-from="8"/><circle cx="347" cy="509.0" r="32" stroke="#0f172a"/><image href="./images/tech/modelcontextprotocol.svg" x="328" y="490.0" width="38" height="38"/><text class="dl" x="347" y="562.0">MCP 接工具</text></g><g class="dnode" style="transform-origin: 533px 509.0px"><circle class="hl-ring" cx="533" cy="509.0" r="40" stroke="#d97757" data-from="8"/><circle cx="533" cy="509.0" r="32" stroke="#d97757"/><text class="emoji" x="533" y="520.0">🧩</text><text class="dl" x="533" y="562.0">Skills</text></g><g class="dnode" style="transform-origin: 720px 509.0px"><circle class="hl-ring" cx="720" cy="509.0" r="40" stroke="#7c3aed" data-from="8"/><circle cx="720" cy="509.0" r="32" stroke="#7c3aed"/><text class="emoji" x="720" y="520.0">🤖</text><text class="dl" x="720" y="562.0">Subagents 分工</text></g><g class="badge" data-from="1" transform="translate(796 71.0)"><circle r="13"/><text class="num" data-from="2" y="5">1</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="2" transform="translate(796 205.0)"><circle r="13"/><text class="num" data-from="3" y="5">2</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="3" transform="translate(796 339.0)"><circle r="13"/><text class="num" data-from="4" y="5">3</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="4" transform="translate(796 473.0)"><circle r="13"/><text class="num" data-from="5" y="5">4</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g></svg>
+          <svg class="tree-svg" viewBox="0 0 880 640" role="img" aria-label="技能樹" data-ai-id="slide-24-tree" data-ai-role="image"><defs></defs><text class="lv" x="0" y="113.0">聊天</text><text class="lv" x="0" y="247.0">編輯器</text><text class="lv" x="0" y="381.0">Agent</text><text class="lv" x="0" y="515.0">進階</text><rect class="band" x="80" y="71" width="720" height="96" rx="18"/><rect class="band" x="80" y="205" width="720" height="96" rx="18"/><line class="band-arrow" x1="440.0" y1="171" x2="440.0" y2="192"/><path class="band-head" d="M431.0 190L449.0 190L440.0 201z"/><rect class="band" x="80" y="339" width="720" height="96" rx="18"/><line class="band-arrow" x1="440.0" y1="305" x2="440.0" y2="326"/><path class="band-head" d="M431.0 324L449.0 324L440.0 335z"/><rect class="band" x="80" y="473" width="720" height="96" rx="18"/><line class="band-arrow" x1="440.0" y1="439" x2="440.0" y2="460"/><path class="band-head" d="M431.0 458L449.0 458L440.0 469z"/><g class="dedges"></g><g class="dnode" style="transform-origin: 300px 107.0px"><circle cx="300" cy="107.0" r="32" stroke="#10a37f"/><image href="./images/ai-logos/chatgpt.svg" x="281" y="88.0" width="38" height="38"/><text class="dl" x="300" y="160.0">ChatGPT</text></g><g class="dnode" style="transform-origin: 580px 107.0px"><circle cx="580" cy="107.0" r="32" stroke="#4285F4"/><image href="./images/ai-logos/gemini.svg" x="561" y="88.0" width="38" height="38"/><text class="dl" x="580" y="160.0">Gemini</text></g><g class="dnode" style="transform-origin: 300px 241.0px"><circle cx="300" cy="241.0" r="32" stroke="#0f172a"/><image href="./images/tech/githubcopilot.svg" x="281" y="222.0" width="38" height="38"/><text class="dl" x="300" y="294.0">GitHub Copilot</text></g><g class="dnode" style="transform-origin: 580px 241.0px"><circle cx="580" cy="241.0" r="32" stroke="#0f172a"/><image href="./images/ai-logos/cursor.svg" x="561" y="222.0" width="38" height="38"/><text class="dl" x="580" y="294.0">Cursor</text></g><g class="dnode" style="transform-origin: 300px 375.0px"><circle class="hl-ring" cx="300" cy="375.0" r="40" stroke="#d97757" data-from="6"/><circle cx="300" cy="375.0" r="32" stroke="#d97757"/><image href="./images/ai-logos/claude.svg" x="281" y="356.0" width="38" height="38"/><text class="dl" x="300" y="428.0">Claude Code</text></g><g class="dnode" style="transform-origin: 580px 375.0px"><circle class="hl-ring" cx="580" cy="375.0" r="40" stroke="#0f172a" data-from="7"/><circle cx="580" cy="375.0" r="32" stroke="#0f172a"/><image href="./images/ai-logos/codex.svg" x="561" y="356.0" width="38" height="38"/><text class="dl" x="580" y="428.0">Codex</text></g><g class="dnode" style="transform-origin: 160px 509.0px"><circle class="hl-ring" cx="160" cy="509.0" r="40" stroke="#64748b" data-from="8"/><circle cx="160" cy="509.0" r="32" stroke="#64748b"/><use class="node-ic" href="#i-file-text" x="143" y="492.0" width="34" height="34" style="color: #64748b"/><text class="dl" x="160" y="562.0">專案規則 .md</text></g><g class="dnode" style="transform-origin: 347px 509.0px"><circle class="hl-ring" cx="347" cy="509.0" r="40" stroke="#0f172a" data-from="8"/><circle cx="347" cy="509.0" r="32" stroke="#0f172a"/><image href="./images/tech/modelcontextprotocol.svg" x="328" y="490.0" width="38" height="38"/><text class="dl" x="347" y="562.0">MCP 接工具</text></g><g class="dnode" style="transform-origin: 533px 509.0px"><circle class="hl-ring" cx="533" cy="509.0" r="40" stroke="#d97757" data-from="8"/><circle cx="533" cy="509.0" r="32" stroke="#d97757"/><use class="node-ic" href="#i-puzzle" x="516" y="492.0" width="34" height="34" style="color: #d97757"/><text class="dl" x="533" y="562.0">Skills</text></g><g class="dnode" style="transform-origin: 720px 509.0px"><circle class="hl-ring" cx="720" cy="509.0" r="40" stroke="#7c3aed" data-from="8"/><circle cx="720" cy="509.0" r="32" stroke="#7c3aed"/><use class="node-ic" href="#i-bot" x="703" y="492.0" width="34" height="34" style="color: #7c3aed"/><text class="dl" x="720" y="562.0">Subagents 分工</text></g><g class="badge" data-from="1" transform="translate(796 71.0)"><circle r="13"/><text class="num" data-from="2" y="5">1</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="2" transform="translate(796 205.0)"><circle r="13"/><text class="num" data-from="3" y="5">2</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="3" transform="translate(796 339.0)"><circle r="13"/><text class="num" data-from="4" y="5">3</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g><g class="badge" data-from="4" transform="translate(796 473.0)"><circle r="13"/><text class="num" data-from="5" y="5">4</text><path class="check" d="M-5.5 0.5L-1.5 4.5L5.5 -3.5"/></g></svg>
           <aside class="tree-keys" data-ai-id="slide-24-keys" data-ai-role="card">
-            <p class="keys-title">🔑 關鍵字</p>
+            <p class="keys-title"><svg class="ic" aria-hidden="true"><use href="#i-key-round"/></svg> 關鍵字</p>
             <dl>
               <div><dt>Prompt</dt><dd>你給 AI 的指令，說越清楚做越好</dd></div>
               <div><dt>Context 上下文</dt><dd>AI 這次看得到的檔案、對話與規則</dd></div>
@@ -1065,9 +1067,9 @@
           <h2 data-ai-id="slide-qa-topics-title" data-ai-role="title">你可以<span class="accent">問我</span></h2>
         </header>
         <ol class="qa-list" data-ai-id="slide-qa-topics-list" data-ai-role="group">
-          <li><b>01</b><span class="qa-icon">🏫</span><h3>五專生活</h3><p>社團幹部、學生會、<br />科會長的經驗</p></li>
-          <li><b>02</b><span class="qa-icon">💼</span><h3>接案經驗</h3><p>兩年多的接案經驗，<br />分享業界的知識與細節</p></li>
-          <li><b>03</b><span class="qa-icon">💬</span><h3>其他</h3><p>任何問題都可以問我，<br />我都很樂於解答</p></li>
+          <li><b>01</b><span class="qa-icon"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-school"/></svg></span></span><h3>五專生活</h3><p>社團幹部、學生會、<br />科會長的經驗</p></li>
+          <li><b>02</b><span class="qa-icon"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-briefcase"/></svg></span></span><h3>接案經驗</h3><p>兩年多的接案經驗，<br />分享業界的知識與細節</p></li>
+          <li><b>03</b><span class="qa-icon"><span class="ic-badge"><svg class="ic" aria-hidden="true"><use href="#i-messages-square"/></svg></span></span><h3>其他</h3><p>任何問題都可以問我，<br />我都很樂於解答</p></li>
         </ol>
       </section>
     </main>

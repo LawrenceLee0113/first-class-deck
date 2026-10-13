@@ -2287,11 +2287,6 @@ body.controls-visible .deck-controls,
 .tree-svg .big-x rect { fill: rgba(247, 249, 252, 0.55); }
 .tree-svg .big-x path { fill: none; stroke: #dc2626; stroke-width: 36; stroke-linecap: round; filter: drop-shadow(0 8px 16px rgba(220, 38, 38, 0.35)); }
 
-.tree-svg .emoji {
-  font-size: 32px;
-  text-anchor: middle;
-}
-
 .tree-svg .lv {
   fill: #0d9488;
   font-family: "JetBrains Mono", "Noto Sans TC", monospace;
@@ -2665,4 +2660,49 @@ body.controls-visible .deck-controls,
   color: #334155;
   font-size: 26px;
   line-height: 1.6;
+}
+
+/* ---------- 線條圖示（Lucide）：取代 emoji ---------- */
+.icon-sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+
+.ic,
+.node-ic {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ic {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.14em;
+  flex: none;
+}
+
+/* 大圖示：淡綠色圓角方塊 */
+.ic-badge {
+  display: inline-grid;
+  place-items: center;
+  width: 88px;
+  height: 88px;
+  border-radius: 22px;
+  background: #ccfbf1;
+  color: #0d9488;
+  font-size: 48px;
+  vertical-align: middle;
+}
+
+.ic-badge .ic { vertical-align: 0; }
+
+/* 標題前的小方塊 */
+h2 > .ic-badge {
+  width: 68px;
+  height: 68px;
+  margin-right: 18px;
+  border-radius: 18px;
+  font-size: 38px;
+  vertical-align: 0.05em;
 }
